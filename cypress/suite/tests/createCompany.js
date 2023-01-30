@@ -27,7 +27,7 @@ describe("Test company creation", () => {
         cy.get('#password').type(pwd);
         cy.get('#confirmPassword').type(pwd);
         cy.get('#address_line').type(address);
-        cy.get('#address_line_2').type(address1);
+        cy.get('#address_line_2').type(address);
         cy.get('#city').type(city);
         cy.get('#zip_code').type(zip);
         cy.get('#country').type(country);
