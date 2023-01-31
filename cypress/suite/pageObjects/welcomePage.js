@@ -11,5 +11,10 @@ class welcomePage
     getConsultantButton(){
         return cy.get()
     }
+
+    getLoginButton(){
+        return cy.get('a > .MuiButtonBase-root')
+
+    }
 }
 export default welcomePage
