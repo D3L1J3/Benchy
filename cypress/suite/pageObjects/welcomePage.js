@@ -7,5 +7,9 @@ class welcomePage
     getCreateAccountButton(){
         return cy.get('.css-78jar2 > .MuiButton-root')
     }
+
+    getLoginButton(){
+        return cy.get('a > .MuiButtonBase-root')
+    }
 }
 export default welcomePage
