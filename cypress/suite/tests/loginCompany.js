@@ -1,17 +1,16 @@
 /// <reference types="cypress" />
 /// <reference types="cypress-xpath" /> 
-// npm install -D cypress-xpath c
+// npm install -D cypress-xpath
 
 describe("Test company login", () => {
     it("Should be able to login to a company account", () => {
         cy.visit('https://benchy.se/auth/welcome')
         cy.xpath("//a[@href='/auth/login']/button[@type='button']").click();
         cy.url().should('include', '/auth/login');
-        // login credentials hard coded for now
-        cy.get('#email').type('fredrikgarpe@hotmail.com');
-        cy.get('#password').type('testing123');
+        cy.get('#email').type('140838@gmail.com');
+        cy.get('#password').type('compPwd');
         cy.xpath("//button[contains(text(), 'Sign in')]").click();
-        cy.url().should('include', '/company/home');
+        cy.url().should('include', '/company/setup-profile');
         
         // Find consultants
         cy.contains('Find Consultants').click();
