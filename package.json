@@ -1,0 +1,23 @@
+{
+  "name": "benchy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/D3L1J3/Benchy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/D3L1J3/Benchy/issues"
+  },
+  "homepage": "https://github.com/D3L1J3/Benchy#readme",
+  "devDependencies": {
+    "cypress": "^12.4.0",
+    "cypress-xpath": "^2.0.1"
+  }
+}
