@@ -9,7 +9,7 @@ class welcomePage
     }
 
     getConsultantButton(){
-        return cy.get()
+        return cy.get('.css-twaf9d > :nth-child(2)')
     }
 
     getLoginButton(){

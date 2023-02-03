@@ -1,7 +1,7 @@
 class createAccountPage 
 {    
     getConsultantName(){
-        return cy.get()
+        return cy.get('#username')
     }
     
     getManagerName(){
