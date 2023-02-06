@@ -7,9 +7,9 @@ describe("Test company login", () => {
         cy.visit('https://benchy.se/auth/welcome');
         cy.xpath("//button[contains(text(), 'Log in')]").click();
         cy.url().should('include', '/auth/login');
-        cy.get('#email').type('140838@gmail.com');
-        cy.get('#password').type('compPwd');
-        cy.xpath("//button[contains(text(), 'Sign in')]").click();
+        cy.get('#email').type('689318@gmail.com');
+        cy.get('#password').type('compPwd1');
+        cy.xpath("//button[contains(text(), 'Log in')]").last().click();
 
         // Verify url and profile image
         cy.url().should('include', '/company/home'); 
@@ -18,7 +18,7 @@ describe("Test company login", () => {
         // Find consultants and verifies that match exists
         cy.contains('Find Consultants').click();
         cy.url().should('include', '/company/consultant-listings');
-        cy.xpath("//input[@id='tags-outlined']").first().click();
+        cy.xpath("//input[@id='tags-outlined']").first().click().type("JavaScript");
         cy.contains('JavaScript (Programming Language)').click();
         cy.xpath("//button[contains(text(), 'Search')]").click();
         cy.contains(/Here are \d+ consultants/);
