@@ -42,7 +42,7 @@ describe("createConsultant", function () {
         createAccountPage.getTermsAndConditionCheckBox().check()
         createAccountPage.getCreateAccountButton().click()
 
-        /*
+        
          //Upload Cv page
         const uploadCvPage = new UploadCvPage()
         
@@ -57,8 +57,8 @@ describe("createConsultant", function () {
         uploadCvPage.getConfirmButton().click()
 
         //Skip Uploading CV
-        uploadCvPage.getSkipButton().click()
-        */
+        //uploadCvPage.getSkipButton().click()
+        
 
     })
 })

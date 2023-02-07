@@ -7,7 +7,7 @@ class uploadCvPage
         return cy.get('#email')
     }
     getEmailOne(){
-        return cy.get('#emails\[0\]')
+        return cy.get("[id='emails\[0\]']")
     }
     getConfirmButton(){
         return cy.get('.MuiBox-root > .MuiButtonBase-root')
