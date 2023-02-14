@@ -34,7 +34,6 @@ it("Create new account", function () {
   //Fill in form with required data
   createAccountPage.getManagerName().type(manOrgName)
   createAccountPage.getOrgNumber().type(manOrgName)
-  createAccountPage.getName().type(this.data.fullName)
   createAccountPage.getEmail().type(manOrgName + this.data.email)
   createAccountPage.getConfirmEmail().type(manOrgName + this.data.email)
   createAccountPage.getPassword().type(this.data.pwd)

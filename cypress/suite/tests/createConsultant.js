@@ -53,7 +53,7 @@ describe("createConsultant", function () {
         cy.wait(15000)
 
         //Use a custom email to not have duplicates in the DB
-        uploadCvPage.getEmailOne().type(Date.now()+"@gmail.com")
+        // uploadCvPage.getEmailOne().type(Date.now()+"@gmail.com")
         uploadCvPage.getConfirmButton().click()
 
         //Skip Uploading CV
