@@ -21,6 +21,7 @@ it("Create new account", function () {
 
   //Welcome page
   const welcomePage = new WelcomePage()  
+  cy.get('#rcc-confirm-button').click({force:true}); // Accept cookies
 
   //Select login option
   welcomePage.getLoginButton().click()
@@ -50,6 +51,6 @@ it("Create new account", function () {
 
   //Use a custom email to not have duplicates in the DB
   uploadCvPage.getEmail().type(Date.now()+"@gmail.com")
-  uploadCvPage.getConfirmButton().click()
+  uploadCvPage.getConfirmButton().last().click()
   })
 })

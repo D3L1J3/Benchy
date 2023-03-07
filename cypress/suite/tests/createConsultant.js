@@ -54,6 +54,7 @@ describe("createConsultant", function () {
 
         //Use a custom email to not have duplicates in the DB
         // uploadCvPage.getEmailOne().type(Date.now()+"@gmail.com")
+        cy.get('#rcc-confirm-button').click({force:true}); // Accept cookies
         uploadCvPage.getConfirmButton().click()
 
         //Skip Uploading CV

@@ -21,6 +21,7 @@ it("Create new account", function () {
   const welcomePage = new WelcomePage()  
 
   //Select login option
+  cy.get('#rcc-confirm-button').click({force:true}); // Accept cookies
   welcomePage.getLoginButton().click()
 
   //Login page

@@ -5,6 +5,8 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
-        specPattern: 'cypress/suite/tests/*.js'
+        specPattern: 'cypress/suite/tests/*.js',
+        video: false,
+        videoUploadOnPasses: false
   },
 });

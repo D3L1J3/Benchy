@@ -4,5 +4,8 @@
   },
   "devDependencies": {
     "cypress-xpath": "^2.0.1"
+  },
+  "scripts": {
+    "triggerAllTests-headless": "npx cypress run"
   }
 }
