@@ -31,5 +31,7 @@ it("Create new account", function () {
   loginPage.getEmail().type(this.data.email)
   loginPage.getPassword().type(this.data.password)
   loginPage.getLoginButton().click()
+  cy.url().should('include', '/manager/home'); 
+  cy.xpath("//img[@alt='logo']").should('be.visible');
   })
 })
